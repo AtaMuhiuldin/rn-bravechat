@@ -1,0 +1,13 @@
+stages:
+  - quality
+
+lint:prettier:
+  image: node:lts-alpine
+  stage: quality
+  only:
+    - merge_requests
+  script:
+    - apk add git
+    - yarn add prettier
+    - git fetch --prune
+    - yarn prettier --check $(git diff --name-only HEAD origin/main | egrep -i "[a-z]\.(json|js|tsx)$")

@@ -11,6 +11,8 @@
 ## Aliases
 - `yarn`: run `yarn` into the container
 - `expo`: run `expo` into the container
+- `prettier-check`: launch a prettier check (used in CI)
+- `prettier-write`: fix prettier issues
 
 ## Troubleshooting
 ### If your local ip change after the `docker-compose up -d` command
