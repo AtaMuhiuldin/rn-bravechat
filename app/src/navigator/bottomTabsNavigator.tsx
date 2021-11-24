@@ -8,7 +8,7 @@ import MyProfileScreen from '../screens/myProfileScreen';
 import { FontAwesome } from '@expo/vector-icons';
 import DefaultHeader from '../components/headers/defaultHeader';
 import { useProfileInfo } from '../hooks/profileHooks';
-import Avatar from '../components/headers/core/avatar';
+import Avatar from '../components/core/avatar';
 const Tab = createBottomTabNavigator();
 
 const HomeBottomTabNavigator: React.FC<{}> = () => {
